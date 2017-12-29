@@ -22,7 +22,7 @@ class StringHalving:
         # return min of that set
                 return min(seen)
             seen.add(c)
-            
+
         # Test cases
         # bacabc
         # Plan A: can discarding chars as long as cur  > next
