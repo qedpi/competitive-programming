@@ -1,10 +1,56 @@
 class StringHalving:
     def lexsmallest(self, s):
         """
-        " Remove a copy of each char in s, so that s' is lexigraphically smallest, return first char.
-        :param s: string, comprises of letters from a-z, each appearing twice
-        :return: smallest
+        :param s: string, comprising chars from a-z, each appearing twice
+        :return: return first char of s', substring of s:
+        "           lexigraphically smallest
+        "           contains one copy of each char
         """
+        # Abstraction: don't need s'
+
+
+        # Intuition
+
+
+        # Pseudocode
+        # keep a set of chars seen
+        seen = set()
+        # go through string, adding chars to set
+        for c in s:
+        # if char already seen
+            if c in seen:
+        # return min of that set
+                return min(seen)
+            seen.add(c)
+            
+        # Test cases
+        # bacabc
+        # Plan A: can discarding chars as long as cur  > next
+
+        # dbcaabcd
+        # Plan B: min(it) min(s) => min char
+
+        # [cbc]
+        # min(s) = a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         # abstraction
         # find first char of s', not s' itself
